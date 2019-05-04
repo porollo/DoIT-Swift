@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Important :"; ObjectID = "KgU-tV-BjM"; */
+"KgU-tV-BjM.text" = "Важная задача:";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "bz2-th-9a9"; */
+"bz2-th-9a9.normalTitle" = "Добавить";
+
+/* Class = "UINavigationItem"; title = "DoIT"; ObjectID = "cZD-du-DlN"; */
+"cZD-du-DlN.title" = "DoIT";
+
+/* Class = "UILabel"; text = "Task Title:"; ObjectID = "kJo-Ft-fJb"; */
+"kJo-Ft-fJb.text" = "Задача:";
