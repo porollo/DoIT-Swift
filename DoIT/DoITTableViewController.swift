@@ -36,7 +36,15 @@ class DoITTableViewController: UITableViewController {
         icon.name = "Make App Icons";
         icon.important = true;
         
-        return [beer, milk, diner, icon];
+        let search = DoIT();
+        search.name = "Make App Search";
+        search.important = false;
+        
+        let title = DoIT();
+        title.name = "Make App Title Font And Color";
+        title.important = false;
+        
+        return [beer, milk, diner, icon, search, title];
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,5 +64,10 @@ class DoITTableViewController: UITableViewController {
         }
 
         return cell;
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let addViewController = segue.destination as! AddDoITViewController;
+        addViewController.previusViewController = self;
     }
 }

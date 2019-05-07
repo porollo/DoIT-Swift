@@ -13,10 +13,19 @@ class AddDoITViewController: UIViewController {
     @IBOutlet weak var taskTitleTextField: UITextField!
     @IBOutlet weak var importantSwitch: UISwitch!
     
+    var previusViewController = DoITTableViewController();
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
     }
     
     @IBAction func addTask(_ sender: Any) {
+        let doIT = DoIT();
+        doIT.name = taskTitleTextField.text!;
+        doIT.important = importantSwitch.isOn;
+    
+        previusViewController.doIts.append(doIT);
+        previusViewController.tableView.reloadData();
+        navigationController?.popViewController(animated: true);
     }
 }
